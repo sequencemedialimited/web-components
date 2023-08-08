@@ -16,8 +16,6 @@ class SequenceMedia extends HTMLElement {
   constructor () {
     super()
 
-    console.log()
-
     const shadowRoot = this.attachShadow({ mode: 'open' })
 
     const sequenceMedia = document.createElement('div')
