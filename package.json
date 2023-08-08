@@ -1,11 +1,14 @@
 {
   "name": "web-components",
+  "private": true,
   "version": "0.0.0",
   "main": "index.mjs",
   "type": "module",
   "author": "Jonathan Perry for Sequence Media Limited <sequencemedia@sequencemedia.net>",
   "license": "ISC",
   "scripts": {
+    "start": "DEBUG=web-components cross-env NODE_ENV=production node .",
+    "start:dev": "DEBUG=web-components cross-env NODE_ENV=development node .",
     "lint": "eslint . --ext .mjs,.cjs,.mts,.cts",
     "lint:fix": "npm run lint -- --fix",
     "prepare": "husky install"
@@ -22,6 +25,7 @@
     "husky": "^8.0.3"
   },
   "dependencies": {
+    "debug": "^4.3.4",
     "express": "^4.18.2"
   }
 }
